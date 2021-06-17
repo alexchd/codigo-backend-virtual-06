@@ -2,4 +2,4 @@ django-admin startproject <proyect_name> ==> crea un proyecto con ese nombre
 python manage.py runserver ==> levanta el server
 python manage.py showmigrations ==> lista todas las migraciones que hay en el proyecxto y las que han sido efectuados estaran marcados con una x
 python manage.py migrate ==> efectua todas las migraciones que aun no se han realizado en la bd.
-python manage.py startapp ==> 
+python manage.py startapp  libreria==>  
