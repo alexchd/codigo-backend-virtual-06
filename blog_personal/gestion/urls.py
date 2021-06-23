@@ -1,9 +1,10 @@
 from django.urls import path
 from .views import (LibrosController,
-                    LibroController,
+                    LibroController, PrestamoController, UsuarioController,
                     busqueda_libros,
                     buscador_edicion,
-                    UsuariosController)
+                    UsuariosController,
+                    PrestamosController)
 
 urlpatterns = [
     path('libros', LibrosController.as_view(), name='create-read-libros'),
@@ -11,4 +12,7 @@ urlpatterns = [
     path('busqueda_libros', busqueda_libros),
     path('busqueda_libros_edicion', buscador_edicion),
     path('usuarios', UsuariosController.as_view()),
+    path('prestamos', PrestamosController.as_view()),
+    path('prestamos/<int:id>', PrestamoController.as_view()),
+    path('usuarios/<int:id>', UsuarioController.as_view()),
 ]
